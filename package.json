@@ -11,6 +11,7 @@
     "url": "https://github.com/ZombieHippie/Quick-Test-TypeScript"
   },
   "dependencies": {
+    "byots": "2.1.0-dev.20160724.9.14",
     "codemirror": "^5.17.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
