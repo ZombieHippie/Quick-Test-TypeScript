@@ -14,3 +14,4 @@ Quick-Test-TypeScript uses [webpack](http://github.com/webpack/webpack) to build
 
  1. Setup with `npm install`
  2. Start with `npm start`
+ 3. Build with `npm run build`, or minified: `MINIFY=1 npm run build`

@@ -3,12 +3,12 @@ const webpack = require("webpack")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
-const indexHTML = path.join(__dirname, './index.html')
+const indexHTML = path.join(__dirname, './src/index.html')
 
 var config = {
 	entry: './webpack-entry.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname,
     publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
