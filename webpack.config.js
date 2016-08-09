@@ -9,7 +9,7 @@ var config = {
 	entry: './webpack-entry.js',
   output: {
     path: __dirname,
-    publicPath: '/',
+    publicPath: '',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
