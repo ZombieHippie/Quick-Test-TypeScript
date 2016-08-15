@@ -9,4 +9,5 @@ class Apple {
 let a = new Apple();
 let b = new Apple(.7);
 
-b
+// Print out b
+Say(b.isReadyToEat())
