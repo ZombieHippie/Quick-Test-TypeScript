@@ -1,4 +1,10 @@
 *.log
 node_modules
 typings
-.*/
+
+index.html
+main.js
+
+# Various editor preferences
+.alm
+.vscode
