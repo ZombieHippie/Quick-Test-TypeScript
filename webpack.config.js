@@ -13,6 +13,13 @@ var config = {
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
+  devtool: 'eval-inline-sourcemap',
+  devServer: {
+    port: 3000,
+    historyApiFallback: {
+      index: indexHTML
+    }
+  },
   module: {
     loaders: [
       { test: /\.scss$/, loader: "style!css!sass" },
