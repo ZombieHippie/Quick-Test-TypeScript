@@ -1,0 +1,20 @@
+.header
+	.title Try TypeScript
+	.action(onclick='editor.run()') Run
+	.action(onclick='editor.refresh()') Refresh
+	.dropdown.libraries
+		span.action Add Library
+		ul
+			li
+				input(type='text', placeholder='Add js Library URL')
+				span(onclick='editor.addLibrary(this)') +
+	.dropdown.premade
+		.action Premade
+		ul
+			li: span(onclick='editor.setPremade(this.innerText)') Fruit Class
+			li: span(onclick='editor.setPremade(this.innerText)') Extending Fruit Class
+			li: span(onclick='editor.setPremade(this.innerText)') Array Iteration
+		.action(onclick='editor.share()') Share
+	#error.error
+
+	router-outlet

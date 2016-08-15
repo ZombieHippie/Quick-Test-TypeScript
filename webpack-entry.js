@@ -4,21 +4,21 @@ const $ = require("jquery");
 require("touch-splitter-jquery/src/touchsplitter.css")
 require("touch-splitter-jquery/src/jquery.touchsplitter.js")
 
-const editor = require("./src/editor");
+require("./src/main");
 
 
 
-require("./src/editor.scss")
+require("style!./src/editor.scss")
 
 window.Say = function(o){
-  console.log.apply(console, arguments)
-  $("#info").append(o.toString() + "\n")
+	console.log.apply(console, arguments)
+	$("#info").append(o.toString() + "\n")
 }
 window.Clear = function(){
-  $("#info").html('')
+	$("#info").html('')
 }
 
 setTimeout(function () {
-  $("#output-splitter").touchSplit({orientation:"vertical"})
-  editor.refresh()
+	$("#output-splitter").touchSplit({orientation:"vertical"})
+	editor.refresh()
 }, 100)

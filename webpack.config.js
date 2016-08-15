@@ -6,7 +6,17 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const indexHTML = path.join(__dirname, './src/index.html')
 
 var config = {
-	entry: './webpack-entry.js',
+  entry:{
+    'polyfills': ['./src/polyfills.ts'],
+    'app': ['./src/main.ts']
+  },
+  devtool: 'eval-inline-sourcemap',
+  devServer: {
+    port: 3000,
+    historyApiFallback: {
+      index: './src/index.html'
+    }
+  },
   output: {
     path: __dirname,
     publicPath: '',
@@ -15,8 +25,9 @@ var config = {
   },
   module: {
     loaders: [
-      { test: /\.scss$/, loader: "style!css!sass" },
-      { test: /\.css$/, loader: "style!css" },
+      { test: /\.scss$/, loader: "css!sass" },
+      { test: /\.pug$/, loader: "raw!pug" },
+      { test: /\.css$/, loader: "css" },
       { test: /\.png$/, loader: "file-loader" },
       { test: /\.ts$/, loader: "ts-loader" },
     ]
