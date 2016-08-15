@@ -6,8 +6,6 @@ require("touch-splitter-jquery/src/jquery.touchsplitter.js")
 
 const editor = require("./src/editor");
 
-
-
 require("./src/editor.scss")
 
 window.Say = function(o){

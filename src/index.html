@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Quick Test TypeScript</title>
-  <!--<link rel="stylesheet" href="dist/styles.css">-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quick Test TypeScript</title>
+	<!--<link rel="stylesheet" href="dist/styles.css">-->
 </head>
 <body>
-  <div class="header">
-    <div class="title">Try TypeScript</div>
-    <div class="action" onclick="editor.run()">Run</div>
-    <div class="action" onclick="editor.refresh()">Refresh</div>
-    <div class="dropdown libraries">
-      <span class="action">Add Library</span>
-      <ul>
-        <li><input type="text" placeholder="Add js Library URL"></input><span onclick="editor.addLibrary(this)">+</span></li>
-      </ul>
-    </div>
-    <div class="dropdown premade">
-      <span class="action">Premade</span>
-      <ul>
-        <li><span onclick="editor.setPremade(this.innerText)">Fruit Class</span></li>
-        <li><span onclick="editor.setPremade(this.innerText)">Extending Fruit Class</span></li>
-        <li><span onclick="editor.setPremade(this.innerText)">Array Iteration</span></li>
-      </ul>
-    </div>
-    <div class="action" onclick="editor.share()">Share</div>
-    <div class="error" id="error"></div>
-  </div>
+	<div class="header">
+		<div class="title">Try TypeScript</div>
+		<div class="action" onclick="editor.run()">Run</div>
+		<div class="action" onclick="editor.refresh()">Refresh</div>
+		<div class="dropdown libraries">
+			<span class="action">Add Library</span>
+			<ul>
+				<li><input type="text" placeholder="Add js Library URL"></input><span onclick="editor.addLibrary(this)">+</span></li>
+			</ul>
+		</div>
+		<div class="dropdown premade">
+			<span class="action">Premade</span>
+			<ul>
+				<li><span onclick="editor.setPremade(this.innerText)">Fruit Class</span></li>
+				<li><span onclick="editor.setPremade(this.innerText)">Extending Fruit Class</span></li>
+				<li><span onclick="editor.setPremade(this.innerText)">Array Iteration</span></li>
+			</ul>
+		</div>
+		<div class="action" onclick="editor.share()">Share</div>
+		<div class="error" id="error"></div>
+	</div>
 
-  <div id="output-splitter">
-    <div class="typescript-editor">
+	<div id="output-splitter">
+		<div class="typescript-editor">
 <textarea id="cm-typescript" name="code" rows="5">const message: string = "Hello TypeScript";
 console.log(message);
 </textarea>
-    </div>
-    <div id="output">
-      <div id="compilation"></div>
-      <pre id="info"></pre>
-    </div>
-  </div>
+		</div>
+		<div id="output">
+			<div id="compilation"></div>
+			<pre id="info"></pre>
+		</div>
+	</div>
 </body>
 </html>

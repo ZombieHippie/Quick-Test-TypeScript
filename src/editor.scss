@@ -78,30 +78,34 @@ html, body,  .typescript-editor .CodeMirror{
 .dropdown {
 	position:relative;
 	float:left;
-}
-.dropdown:hover ul {
-	z-index: 5;
-	display:block;
-}
-.dropdown ul {
-	position:absolute;
-	display:none;
-	list-style:none;
-	margin:0;
-	padding:0;
-	top: 42px;
-}
-.dropdown ul li {background-color: $theme; padding: 10px;width: 200px;}
-.dropdown ul li input {width:150px;padding:1px;margin:1px;}
-.dropdown ul li span:hover {background: #095A6F;}
-.dropdown ul li span {font-weight:bold;cursor:pointer;margin:0;padding:5px;
-	color: #FFF;
-	display: block;
-	background: #067794;
-	text-align: center;
-}
-.dropdown.libraries ul li span {
-	line-height: 13px;
-	float: right;
-	width: 13px;    
+
+	&:hover ul {
+		z-index: 5;
+		display:block;
+	}
+
+	ul {
+		position:absolute;
+		display:none;
+		list-style:none;
+		margin:0;
+		padding:0;
+		top: 42px;
+	}
+
+	ul li {background-color: $theme; padding: 10px;width: 200px;}
+	ul li input {width:150px;padding:1px;margin:1px;}
+	ul li span:hover {background: #095A6F;}
+	ul li span {font-weight:bold;cursor:pointer;margin:0;padding:5px;
+		color: #FFF;
+		display: block;
+		background: #067794;
+		text-align: center;
+	}
+
+	&.libraries ul li span {
+		line-height: 13px;
+		float: right;
+		width: 13px;    
+	}
 }
