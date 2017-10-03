@@ -5,9 +5,9 @@ Quickly test TypeScript in your browser with CodeMirror.
 
 The editor comes with a prebuilt `Say(object)` function that will print the `object.toString()` to an output area on the webpage, and a complimentary `Clear()` function for clearing the output window.
 
-<center>
+<p align="center">
   <a href="http://colelawrence.github.io/Quick-Test-TypeScript/">Launch Quick-Test-TypeScript</a>
-</center>
+</p>
 
 ## Building
 Quick-Test-TypeScript uses [webpack](http://github.com/webpack/webpack) to build.
